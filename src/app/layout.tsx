@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SmoothScroll from "../components/SmoothScroll";
-import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -64,11 +63,6 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
-        <Script
-          src="https://liongrowthmedia.com/badge.js"
-          strategy="afterInteractive"
-          data-client="daniel-khalili"
-        />
       </body>
     </html>
   );
