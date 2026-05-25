@@ -13,6 +13,7 @@
   --color-border: rgba(0, 212, 255, 0.12);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
+  --font-orbit: var(--font-orbitron);
 }
 
 * {

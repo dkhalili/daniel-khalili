@@ -131,13 +131,13 @@ export default function TechOrbit() {
                         }}
                       >
                         <div
-                          className="group relative flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-bg-card border border-border hover:border-primary/50 transition-all duration-300 cursor-default"
+                          className="group relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-bg-card border border-border hover:border-primary/50 transition-all duration-300 cursor-default"
                           style={{
                             boxShadow: `0 0 12px ${item.color}20`,
                           }}
                         >
                           <span
-                            className="text-[8px] sm:text-[9px] font-semibold uppercase tracking-wider"
+                            className="font-orbit text-[6px] sm:text-[7px] font-bold uppercase tracking-wide text-center leading-tight px-1"
                             style={{ color: item.color }}
                           >
                             {item.label}
@@ -162,7 +162,7 @@ export default function TechOrbit() {
                   style={{ boxShadow: `0 0 8px ${item.color}15` }}
                 >
                   <span
-                    className="text-[10px] font-semibold uppercase tracking-wider"
+                    className="font-orbit text-[10px] font-bold uppercase tracking-wider"
                     style={{ color: item.color }}
                   >
                     {item.label}

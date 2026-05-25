@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -14,6 +14,12 @@ const inter = Inter({
 
 const jetbrains = JetBrains_Mono({
   variable: "--font-jetbrains",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
   display: "swap",
 });
@@ -51,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrains.variable} antialiased`}
+      className={`${inter.variable} ${jetbrains.variable} ${orbitron.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-bg text-text font-sans noise-overlay">
         <SmoothScroll />
