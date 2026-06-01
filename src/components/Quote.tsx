@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import FadeIn from "./FadeIn";
+import DkMark from "./DkMark";
 
 export default function Quote() {
   return (
@@ -30,7 +31,7 @@ export default function Quote() {
             </blockquote>
             <div className="mt-8 flex items-center justify-center gap-3">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-bg font-bold text-xs">
-                DK
+                <DkMark className="h-7 w-7 text-bg" tone="solid" />
               </div>
               <div className="text-left">
                 <p className="text-sm font-medium">Daniel Khalili</p>

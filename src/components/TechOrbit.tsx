@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import FadeIn from "./FadeIn";
+import DkMark from "./DkMark";
 
 const orbits = [
   {
@@ -50,7 +51,10 @@ const orbits = [
 
 export default function TechOrbit() {
   const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(frame);
+  }, []);
 
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
@@ -80,7 +84,7 @@ export default function TechOrbit() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg shadow-primary/30"
               >
-                <span className="text-bg font-bold text-sm">DK</span>
+                <DkMark className="h-12 w-12 text-bg" tone="solid" />
               </motion.div>
             </div>
 

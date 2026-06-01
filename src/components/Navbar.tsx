@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import DkMark from "./DkMark";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -43,10 +44,10 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-20">
           <button
             onClick={() => handleClick("#hero")}
-            className="text-lg font-semibold tracking-tight cursor-pointer"
+            className="group flex h-10 w-10 items-center justify-center rounded border border-transparent transition-all duration-200 hover:border-primary/25 hover:bg-primary/5 cursor-pointer"
+            aria-label="Daniel Khalili home"
           >
-            <span className="text-primary">D</span>
-            <span className="text-text">K</span>
+            <DkMark className="h-7 w-7 transition-transform duration-200 group-hover:scale-105" />
           </button>
 
           <div className="hidden md:flex items-center gap-8">
