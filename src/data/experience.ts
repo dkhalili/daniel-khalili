@@ -23,7 +23,7 @@ export const experience: Experience[] = [
     roles: [
       {
         title: "Manager, Engineering",
-        period: "Mar 2026 — Present",
+        period: "Jan 2026 — Present",
         description:
           "Promoted into engineering leadership while remaining hands-on technically, balancing high-level planning with active development.",
         highlights: [
@@ -39,7 +39,7 @@ export const experience: Experience[] = [
       {
         title: "Senior Software Engineer II",
         type: "Tech Lead",
-        period: "Jan 2024 — Mar 2026",
+        period: "Jan 2024 — Jan 2026",
         description:
           "Led full-stack development of the internal Campaign Management platform, owning end-to-end delivery across backend services, APIs, and frontend applications.",
         highlights: [
