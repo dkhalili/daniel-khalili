@@ -10,15 +10,15 @@ export const initiatives: Initiative[] = [
   {
     title: "Ad Manager MCP",
     description:
-      "Co-founded the Ad Manager MCP at Kargo, integrating core ad operations workflows into MCP-compatible infrastructure. Accessible by ChatGPT and Claude, enabling ad ops automation across agent environments.",
-    tags: ["MCP", "Agentic AI", "Ad Tech"],
+      "Co-founded the Ad Manager MCP at Kargo, integrating core ad operations workflows into MCP-compatible infrastructure. Extended the system into developer workflows for code-context-aware testing, analysis, monitoring, and fix generation across real ad operations workflows.",
+    tags: ["MCP", "Cursor", "Ad Tech"],
     icon: "bot",
     impact: "First MCP integration in ad tech",
   },
   {
     title: "Multi-Surface Ad Architecture",
     description:
-      "Led the architectural framework to expand Kargo's ad format hierarchy beyond OpenWeb to support CTV, In-App, DOOH, and OS Native surfaces. Started internally, now a high-priority executive initiative.",
+      "Led and presented the architectural framework to expand Kargo's ad format hierarchy beyond OpenWeb to support CTV, In-App, DOOH, and OS Native surfaces. Started internally, adopted by a dedicated surfaces team, now a high-priority executive initiative.",
     tags: ["Architecture", "CTV", "DOOH", "In-App"],
     icon: "layers",
     impact: "Adopted as executive priority",
@@ -34,8 +34,8 @@ export const initiatives: Initiative[] = [
   {
     title: "Jira & GitHub Automation",
     description:
-      "An early application of AI-driven automation: built a custom system that synchronized Jira tickets to GitHub PRs, applied labels automatically, tracked milestones, and generated release notes based on PR types — removing significant manual overhead from the engineering workflow.",
-    tags: ["AI Automation", "DX", "Tooling"],
+      "Built a webhook-driven workflow layer connecting GitHub, Jira, release metadata, PR labels, alerts, and engineering comms. The system synchronized tickets to PRs, generated release notes, surfaced workflow state, and helped engineers move from code context to operational action without leaving the development loop.",
+    tags: ["Webhooks", "GitHub", "DX"],
     icon: "zap",
     impact: "AI-driven automation",
   },
@@ -50,8 +50,8 @@ export const initiatives: Initiative[] = [
   {
     title: "AI Adoption & Agentic Systems",
     description:
-      "Led AI integration within the engineering team and expanded tooling to other departments. Built internal agentic systems using OpenAI and Anthropic APIs, Neuron AI, and the Laravel AI Toolkit.",
-    tags: ["AI", "Anthropic API", "OpenAI API"],
+      "Led AI integration within the engineering team and expanded tooling and workflows to other departments. Built internal agentic systems using Cursor, OpenAI API, Anthropic API, Neuron AI, and Laravel AI Toolkit to improve developer velocity, automate engineering operations, and support production workflows.",
+    tags: ["Agentic AI", "Cursor", "OpenAI"],
     icon: "brain",
     impact: "Cross-department adoption",
   },

@@ -19,7 +19,7 @@ export const experience: Experience[] = [
     company: "Kargo",
     location: "New York, NY",
     companyDescription:
-      "Primary ad demand and supply management platform for a 500–800 person organization. The platform and APIs power campaign management, publisher supply, and all new ad tech integrations company-wide, processing thousands of requests daily. Work spans multiple repositories across very different tech stacks and business domains.",
+      "Primary ad demand and supply management platform for a 500–800 person organization. The platform and APIs power campaign management, publisher supply, and new ad tech integrations company-wide, processing thousands of requests daily across multiple repositories, tech stacks, and business domains.",
     roles: [
       {
         title: "Manager, Engineering",
@@ -28,6 +28,7 @@ export const experience: Experience[] = [
           "Promoted into engineering leadership while remaining hands-on technically, balancing high-level planning with active development.",
         highlights: [
           "Primary point of contact between Product, Project Managers, and Engineering leadership across all major initiatives",
+          "Gather requirements, align on business outcomes, and drive implementation under real resource constraints",
           "Manage 4 direct reports through 1:1s, career growth conversations, and structured feedback, while coordinating across a broader team of ~10 engineers",
           "Assign tasks based on individual strengths and development areas, and provide direct feedback to help engineers grow",
           "Key voice in roadmap planning, proposing and scoping initiatives for cycle and quarterly planning in close collaboration with Product",
@@ -41,13 +42,15 @@ export const experience: Experience[] = [
         type: "Tech Lead",
         period: "Jan 2024 — Jan 2026",
         description:
-          "Led full-stack development of the internal Campaign Management platform, owning end-to-end delivery across backend services, APIs, and frontend applications.",
+          "Led full-lifecycle development of the internal Campaign Management platform, owning end-to-end delivery across distributed backend services, low-latency APIs, and greenfield frontend applications.",
         highlights: [
+          "Designed, built, and operated core platform services and internal tools supporting campaign management, with a focus on low-latency APIs, permissions, monitoring, logging, alerts, and reliable service boundaries",
           "Tech Lead coordinating a broader team of ~10 engineers, aligning with Product, Design, and Ad Operations",
           "Gathered and translated business and product requirements into technical solutions, managing priorities across concurrent workstreams while navigating constant context switching",
           "Ran code reviews, managed CI/CD deployments, and established engineering best practices across the team",
           "One of the primary mentors on the team, actively supporting engineer growth and knowledge sharing",
           "Early adopter of AI tooling within the team, integrating tools that significantly accelerated delivery without compromising code quality",
+          "Built internal engineering automation across GitHub, Jira, release notes, PR metadata, alerts, and team communications, using webhook-driven workflows, clear service contracts, and reliability safeguards to reduce manual coordination and improve delivery visibility",
         ],
         stack: [
           "PHP (Laravel)",
