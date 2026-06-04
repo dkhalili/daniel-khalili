@@ -52,7 +52,7 @@ export default function Contact() {
         </FadeIn>
 
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
-          <FadeIn direction="left" className="lg:col-span-2">
+          <FadeIn className="lg:col-span-2">
             <div className="space-y-6">
               <a
                 href="mailto:dkhalili93@gmail.com"
@@ -123,7 +123,7 @@ export default function Contact() {
             </div>
           </FadeIn>
 
-          <FadeIn direction="right" className="lg:col-span-3">
+          <FadeIn className="lg:col-span-3">
             <form
               onSubmit={handleSubmit}
               className="bg-bg-card border border-border rounded-xl p-6 sm:p-8"
