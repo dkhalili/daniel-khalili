@@ -91,7 +91,7 @@ export const skillCategories: SkillCategory[] = [
 ];
 
 export const stats = [
-  { value: 9, suffix: "+", label: "Years in Software Engineering" },
+  { value: 10, suffix: "+", label: "Years in Software Engineering" },
   { value: 4, suffix: "", label: "Direct Reports" },
   { value: 10, suffix: "+", label: "Engineers Coordinated" },
   { value: 4, suffix: "", label: "Companies as Tech Lead" },
