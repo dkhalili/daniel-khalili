@@ -27,9 +27,9 @@ export const experience: Experience[] = [
         description:
           "Promoted into engineering leadership while remaining hands-on technically, balancing high-level planning with active development.",
         highlights: [
-          "Primary point of contact between Product, Project Managers, and Engineering leadership across all major initiatives",
-          "Gather requirements, align on business outcomes, and drive implementation under real resource constraints",
-          "Manage 4 direct reports through 1:1s, career growth conversations, and structured feedback, while coordinating across a broader team of ~10 engineers",
+          "Primary point of contact between Product, Project Managers, and Engineering leadership across major initiatives, gathering requirements, aligning on business outcomes, and driving implementation under real resource constraints",
+          "Lead team execution across planning, delivery, feedback loops, stakeholder alignment, and technical decision-making for a broader engineering group of roughly 10 engineers",
+          "Manage 4 direct reports through 1:1s, career growth conversations, structured feedback, and thoughtful task assignment",
           "Assign tasks based on individual strengths and development areas, and provide direct feedback to help engineers grow",
           "Key voice in roadmap planning, proposing and scoping initiatives for cycle and quarterly planning in close collaboration with Product",
           "Run sprint ceremonies including standups and technical deep-dives",
@@ -45,12 +45,12 @@ export const experience: Experience[] = [
           "Led full-lifecycle development of the internal Campaign Management platform, owning end-to-end delivery across distributed backend services, low-latency APIs, and greenfield frontend applications.",
         highlights: [
           "Designed, built, and operated core platform services and internal tools supporting campaign management, with a focus on low-latency APIs, permissions, monitoring, logging, alerts, and reliable service boundaries",
-          "Tech Lead coordinating a broader team of ~10 engineers, aligning with Product, Design, and Ad Operations",
+          "Operated as the team's technical and delivery lead while being evaluated for formal engineering leadership, owning team coordination, mentoring, execution planning, stakeholder communication, and delivery quality across a broader group of roughly 10 engineers",
+          "Built internal engineering automation across GitHub, Jira, release notes, PR metadata, alerts, and team communications, using webhook-driven workflows, clear service contracts, and reliability safeguards to reduce manual coordination and improve delivery visibility",
           "Gathered and translated business and product requirements into technical solutions, managing priorities across concurrent workstreams while navigating constant context switching",
           "Ran code reviews, managed CI/CD deployments, and established engineering best practices across the team",
           "One of the primary mentors on the team, actively supporting engineer growth and knowledge sharing",
           "Early adopter of AI tooling within the team, integrating tools that significantly accelerated delivery without compromising code quality",
-          "Built internal engineering automation across GitHub, Jira, release notes, PR metadata, alerts, and team communications, using webhook-driven workflows, clear service contracts, and reliability safeguards to reduce manual coordination and improve delivery visibility",
         ],
         stack: [
           "PHP (Laravel)",
@@ -88,8 +88,9 @@ export const experience: Experience[] = [
           "Built and led the tech department from the ground up for a medical aesthetics e-commerce company, modernizing the platform to a new generation of technology.",
         highlights: [
           "Led the architecture and development of a live streaming and class platform for healthcare training, evolving it from basic video conferencing into a full-featured communication and learning environment using AWS ChimeSDK and FFmpeg",
+          "Hired, managed, mentored, and reviewed a team of 3 engineers while owning product direction, technical architecture, and delivery planning with the CEO",
           "Worked directly with the CEO to set company direction and shape the product roadmap",
-          "Hired, mentored, and managed a team of 3 engineers while serving as the lead engineer on all major development efforts",
+          "Set engineering priorities, coordinated execution, and made product and technical tradeoff decisions under fast-moving startup constraints",
         ],
         stack: [
           "Node.js",
@@ -127,8 +128,9 @@ export const experience: Experience[] = [
         title: "Co-Founder | Architect | Lead Software Engineer",
         period: "May 2017 — Jun 2019",
         description:
-          "Co-founded Scimund in 2017, a technology startup focused on bringing immersive VR and media experiences to consumers for capturing and reliving personal memories.",
+          "Built a technology startup focused on immersive VR and media experiences for capturing and reliving personal memories.",
         highlights: [
+          "Co-founded the company and led software/product direction under startup constraints, managing team execution, stakeholder expectations, technical decisions, and rapid delivery across web and immersive platforms",
           "Served as one of two company leads, making product direction and project management decisions alongside day-to-day engineering and operations",
           "Managed the software department including hiring, budgeting, and team oversight, while leading architecture and development across web and VR platforms",
           "Built in-house server infrastructure to connect web applications and led the team into new technology including Unreal Engine, Unity, C++, and Python",
