@@ -2,6 +2,8 @@
 
 import { GraduationCap, Award } from "lucide-react";
 import FadeIn from "./FadeIn";
+import TiltCard from "./TiltCard";
+import SectionHeading from "./SectionHeading";
 
 const education = [
   {
@@ -25,37 +27,35 @@ export default function Education() {
   return (
     <section className="relative py-16 lg:py-24">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeIn>
-          <div className="text-center mb-12">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-              Foundation
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-light mt-4">
-              Education
-            </h2>
-          </div>
-        </FadeIn>
+        <SectionHeading
+          index="07"
+          eyebrow="Foundation"
+          title="My"
+          highlight="Education"
+        />
 
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {education.map((edu, i) => (
             <FadeIn key={edu.institution} delay={i * 0.1}>
-              <div className="bg-bg-card border border-border rounded-xl p-6 sm:p-8 h-full hover:border-primary/30 transition-colors duration-300">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <edu.icon size={20} className="text-primary" />
+              <TiltCard className="glass rounded-xl p-6 sm:p-8 h-full">
+                <div className="relative z-[2]">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <edu.icon size={20} className="text-primary" />
+                    </div>
+                    <span className="text-xs text-text-muted font-mono">
+                      {edu.period}
+                    </span>
                   </div>
-                  <span className="text-xs text-text-muted font-mono">
-                    {edu.period}
-                  </span>
+                  <h3 className="text-base font-medium mb-1">
+                    {edu.institution}
+                  </h3>
+                  <p className="text-xs text-text-muted mb-3">{edu.location}</p>
+                  <p className="text-sm text-text-body font-light leading-relaxed">
+                    {edu.description}
+                  </p>
                 </div>
-                <h3 className="text-base font-medium mb-1">
-                  {edu.institution}
-                </h3>
-                <p className="text-xs text-text-muted mb-3">{edu.location}</p>
-                <p className="text-sm text-text-body font-light leading-relaxed">
-                  {edu.description}
-                </p>
-              </div>
+              </TiltCard>
             </FadeIn>
           ))}
         </div>

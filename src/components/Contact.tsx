@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Mail, Send, MapPin } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
 import FadeIn from "./FadeIn";
+import Magnetic from "./Magnetic";
+import SectionHeading from "./SectionHeading";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -35,21 +37,13 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-20 lg:py-32">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeIn>
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-              Connect
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mt-4 mb-6">
-              Let&apos;s{" "}
-              <span className="gradient-text font-medium">Talk</span>
-            </h2>
-            <p className="text-text-body font-light max-w-lg mx-auto leading-relaxed">
-              Whether it&apos;s about engineering leadership, a role, or just
-              connecting — I&apos;d love to hear from you.
-            </p>
-          </div>
-        </FadeIn>
+        <SectionHeading
+          index="08"
+          eyebrow="Connect"
+          title="Let's"
+          highlight="Talk"
+          description="Whether it's about engineering leadership, a role, or just connecting — I'd love to hear from you."
+        />
 
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
           <FadeIn className="lg:col-span-2">
@@ -176,18 +170,20 @@ export default function Contact() {
                 />
               </div>
 
-              <button
-                type="submit"
-                disabled={status === "sending"}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-bg text-xs font-semibold uppercase tracking-[0.12em] rounded hover:translate-y-[-2px] hover:shadow-lg hover:shadow-primary/25 transition-all duration-200 disabled:opacity-50 min-h-[44px]"
-              >
-                <Send size={14} />
-                {status === "sending"
-                  ? "Sending..."
-                  : status === "sent"
-                    ? "Sent!"
-                    : "Send Message"}
-              </button>
+              <Magnetic>
+                <button
+                  type="submit"
+                  disabled={status === "sending"}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-bg text-xs font-semibold uppercase tracking-[0.12em] rounded hover:shadow-lg hover:shadow-primary/25 transition-shadow duration-200 disabled:opacity-50 min-h-[44px]"
+                >
+                  <Send size={14} />
+                  {status === "sending"
+                    ? "Sending..."
+                    : status === "sent"
+                      ? "Sent!"
+                      : "Send Message"}
+                </button>
+              </Magnetic>
 
               {status === "sent" && (
                 <motion.p

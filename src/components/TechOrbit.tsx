@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import FadeIn from "./FadeIn";
 import DkMark from "./DkMark";
+import SectionHeading from "./SectionHeading";
 
 const orbits = [
   {
@@ -59,21 +60,13 @@ export default function TechOrbit() {
   return (
     <section className="relative py-20 lg:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeIn>
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-              Ecosystem
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mt-4 mb-6">
-              Tech{" "}
-              <span className="gradient-text font-medium">Universe</span>
-            </h2>
-            <p className="text-text-body font-light max-w-2xl mx-auto leading-relaxed">
-              The tools, frameworks, and AI systems I work with daily —
-              orbiting around engineering leadership at the center.
-            </p>
-          </div>
-        </FadeIn>
+        <SectionHeading
+          index="05"
+          eyebrow="Ecosystem"
+          title="Tech"
+          highlight="Universe"
+          description="The tools, frameworks, and AI systems I work with daily — orbiting around engineering leadership at the center."
+        />
 
         {mounted && <FadeIn>
           <div className="relative mx-auto w-full max-w-[640px] aspect-square hidden sm:block">

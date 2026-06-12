@@ -1,8 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Code, Users, TrendingUp, Cpu } from "lucide-react";
 import FadeIn from "./FadeIn";
+import TiltCard from "./TiltCard";
+import SectionHeading from "./SectionHeading";
 
 const principles = [
   {
@@ -40,29 +41,23 @@ export default function Philosophy() {
     <section className="relative py-20 lg:py-32">
       <div className="absolute inset-0 bg-bg-surface/50" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeIn>
-          <div className="text-center mb-16">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
-              Philosophy
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light mt-4 mb-6">
-              How I{" "}
-              <span className="gradient-text font-medium">Lead</span>
-            </h2>
-          </div>
-        </FadeIn>
+        <SectionHeading
+          index="03"
+          eyebrow="Philosophy"
+          title="How I"
+          highlight="Lead"
+        />
 
         <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
           {principles.map((principle, i) => (
             <FadeIn key={principle.number} delay={i * 0.1}>
-              <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.2 }}
-                className="relative bg-bg-card border border-border rounded-xl p-6 sm:p-8 h-full group hover:border-primary/30 transition-colors duration-300"
+              <TiltCard
+                tilt={5}
+                className="glass rounded-xl p-6 sm:p-8 h-full group"
               >
-                <div className="flex items-start gap-4">
+                <div className="relative z-[2] flex items-start gap-4">
                   <div className="shrink-0">
-                    <span className="text-3xl sm:text-4xl font-light text-primary/20 group-hover:text-primary/40 transition-colors">
+                    <span className="font-orbit text-3xl sm:text-4xl font-light text-primary/20 group-hover:text-primary/50 transition-colors duration-300">
                       {principle.number}
                     </span>
                   </div>
@@ -80,7 +75,7 @@ export default function Philosophy() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </TiltCard>
             </FadeIn>
           ))}
         </div>

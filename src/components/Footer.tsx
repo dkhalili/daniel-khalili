@@ -9,8 +9,24 @@ export default function Footer() {
   );
 
   return (
-    <footer className="border-t border-border py-10 sm:py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="relative overflow-hidden border-t border-border py-10 sm:py-12">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-24 left-1/2 h-64 w-[120%] -translate-x-1/2 bg-primary/5 blur-[100px]"
+      />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <a
+          href="mailto:dkhalili93@gmail.com"
+          className="group mb-10 block text-center"
+        >
+          <span className="block text-[10px] font-semibold uppercase tracking-[0.3em] text-text-muted mb-3">
+            Open to interesting conversations
+          </span>
+          <span className="gradient-text-animated inline-block text-3xl sm:text-5xl lg:text-6xl font-medium tracking-tight transition-transform duration-300 group-hover:scale-[1.02]">
+            Let&apos;s build something great.
+          </span>
+        </a>
+
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <div className="flex items-center gap-2">

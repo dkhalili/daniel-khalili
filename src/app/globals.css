@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-bg: #0A0A0F;
-  --color-bg-surface: #12121A;
-  --color-bg-card: #181825;
-  --color-primary: #00D4FF;
-  --color-primary-dark: #00A8CC;
-  --color-accent: #7B61FF;
-  --color-text: #E8E8ED;
-  --color-text-body: #9CA3AF;
-  --color-text-muted: #6B7280;
+  --color-bg: #050508;
+  --color-bg-surface: #0b0b13;
+  --color-bg-card: #0f0f1a;
+  --color-primary: #00d4ff;
+  --color-primary-dark: #00a8cc;
+  --color-accent: #7b61ff;
+  --color-text: #ececf1;
+  --color-text-body: #9ca3af;
+  --color-text-muted: #6b7280;
   --color-border: rgba(0, 212, 255, 0.12);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains);
@@ -36,6 +36,17 @@ body {
 ::selection {
   background: rgba(0, 212, 255, 0.3);
   color: #fff;
+}
+
+/* Custom cursor — hide native pointer on interactive elements (desktop only).
+   Inputs keep the native I-beam so text editing stays usable. */
+@media (pointer: fine) {
+  html.custom-cursor,
+  html.custom-cursor a,
+  html.custom-cursor button,
+  html.custom-cursor [role="button"] {
+    cursor: none;
+  }
 }
 
 .card-hover {
@@ -65,10 +76,31 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00D4FF 0%, #7B61FF 100%);
+  background: linear-gradient(135deg, #00d4ff 0%, #7b61ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* Animated gradient for hero-scale type */
+.gradient-text-animated {
+  background: linear-gradient(120deg, #00d4ff, #7b61ff, #00d4ff, #4dd6a9, #00d4ff);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-pan 8s linear infinite;
+}
+
+@keyframes gradient-pan {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* Hollow outline type for ghost numbers / oversized words */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 212, 255, 0.18);
 }
 
 .glow {
@@ -77,6 +109,49 @@ body {
 
 .glow-text {
   text-shadow: 0 0 20px rgba(0, 212, 255, 0.5), 0 0 40px rgba(0, 212, 255, 0.2);
+}
+
+/* Frosted panel used by cards across sections */
+.glass {
+  background: linear-gradient(160deg, rgba(15, 15, 26, 0.9), rgba(11, 11, 19, 0.7));
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+/* Mouse-tracking spotlight — TiltCard sets --mx / --my */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(0, 212, 255, 0.09),
+    rgba(123, 97, 255, 0.05) 45%,
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+/* Faint blueprint grid behind the hero, faded at the edges */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 45%, black 30%, transparent 75%);
 }
 
 @keyframes float {
@@ -93,6 +168,17 @@ body {
   animation: float 6s ease-in-out infinite;
 }
 
+@keyframes aurora-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(60px, -40px) scale(1.15); }
+  66% { transform: translate(-50px, 30px) scale(0.92); }
+}
+
+.aurora-blob {
+  animation: aurora-drift 18s ease-in-out infinite;
+  will-change: transform;
+}
+
 .noise-overlay::before {
   content: "";
   position: fixed;
@@ -106,4 +192,12 @@ body {
 .section-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient-text-animated,
+  .aurora-blob,
+  .animate-float {
+    animation: none;
+  }
 }

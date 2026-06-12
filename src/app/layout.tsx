@@ -4,6 +4,9 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SmoothScroll from "../components/SmoothScroll";
+import Preloader from "../components/Preloader";
+import CustomCursor from "../components/CustomCursor";
+import ScrollProgress from "../components/ScrollProgress";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -59,6 +62,9 @@ export default function RootLayout({
       className={`${inter.variable} ${jetbrains.variable} ${orbitron.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-bg text-text font-sans noise-overlay">
+        <Preloader />
+        <CustomCursor />
+        <ScrollProgress />
         <SmoothScroll />
         <Navbar />
         <main className="flex-1">{children}</main>

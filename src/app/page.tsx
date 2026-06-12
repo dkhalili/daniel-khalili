@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Marquee from "../components/Marquee";
 import About from "../components/About";
 import Quote from "../components/Quote";
 import Initiatives from "../components/Initiatives";
@@ -13,23 +14,15 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="section-divider" />
+      <Marquee />
       <About />
-      <div className="section-divider" />
       <Quote />
-      <div className="section-divider" />
       <Initiatives />
-      <div className="section-divider" />
       <Philosophy />
-      <div className="section-divider" />
       <Timeline />
-      <div className="section-divider" />
       <TechOrbit />
-      <div className="section-divider" />
       <Skills />
-      <div className="section-divider" />
       <Education />
-      <div className="section-divider" />
       <Contact />
     </>
   );
