@@ -5,8 +5,10 @@ import {
   Layers,
   Rocket,
   Zap,
-  Target,
-  Brain,
+  Wrench,
+  Activity,
+  Tv,
+  ChartColumn,
 } from "lucide-react";
 import FadeIn from "./FadeIn";
 import TiltCard from "./TiltCard";
@@ -18,8 +20,10 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
   layers: Layers,
   rocket: Rocket,
   zap: Zap,
-  target: Target,
-  brain: Brain,
+  wrench: Wrench,
+  activity: Activity,
+  tv: Tv,
+  chart: ChartColumn,
 };
 
 export default function Initiatives() {
@@ -32,7 +36,7 @@ export default function Initiatives() {
           eyebrow="Impact"
           title="Notable"
           highlight="Initiatives"
-          description="From co-founding MCP integrations to transforming deployment culture — these are the initiatives that define my approach."
+          description="Shared platforms, governed AI workflows, and reliable delivery — selected work across my Tech Lead and Engineering Manager roles."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

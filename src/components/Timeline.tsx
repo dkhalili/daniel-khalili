@@ -77,6 +77,12 @@ export default function Timeline() {
                         </span>
                       </div>
 
+                      {roleIndex === 0 && exp.companyDescription && (
+                        <p className="text-sm text-text-muted font-light leading-relaxed mb-4 pb-4 border-b border-border">
+                          {exp.companyDescription}
+                        </p>
+                      )}
+
                       <p className="text-sm text-text-body font-light leading-relaxed mb-3">
                         {role.description}
                       </p>

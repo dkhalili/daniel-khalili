@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated documents and local editorial notes
+/output/
+/tmp/
+/resume/notes.private.md

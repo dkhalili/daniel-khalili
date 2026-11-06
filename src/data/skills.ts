@@ -14,7 +14,8 @@ export const skillCategories: SkillCategory[] = [
       "Roadmap Planning",
       "1:1s & Career Development",
       "Cross-functional Collaboration",
-      "Sprint Ceremonies",
+      "Cross-team Delivery",
+      "Incident Management",
       "Service Ownership",
     ],
   },
@@ -73,8 +74,13 @@ export const skillCategories: SkillCategory[] = [
       "Webhook Automation",
       "SCM Integrations",
       "Service Contracts",
+      "Kafka / Protobuf Integrations",
       "Elasticsearch",
       "Redis",
+      "Laravel Nightwatch",
+      "VictoriaMetrics",
+      "Grafana",
+      "PagerDuty",
     ],
   },
   {
@@ -92,7 +98,7 @@ export const skillCategories: SkillCategory[] = [
 
 export const stats = [
   { value: 10, suffix: "+", label: "Years in Software Engineering" },
-  { value: 4, suffix: "", label: "Direct Reports" },
-  { value: 10, suffix: "+", label: "Engineers Coordinated" },
-  { value: 4, suffix: "", label: "Companies as Tech Lead" },
+  { value: 10, suffix: "+", label: "Engineers Managed" },
+  { value: 3, suffix: "", label: "Activation Infrastructure Pods" },
+  { value: 35, suffix: "K+", label: "Ad Slots in Shared Model" },
 ];

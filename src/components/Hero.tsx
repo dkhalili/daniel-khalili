@@ -110,8 +110,8 @@ export default function Hero() {
               transition={{ delay: 1.2, duration: 0.6 }}
               className="text-base sm:text-lg text-text-body font-light leading-relaxed max-w-lg mb-8"
             >
-              Building high-performance teams and shipping impactful products
-              at the intersection of{" "}
+              Building shared advertising platforms and developing engineers
+              into technical leaders through{" "}
               <span className="text-text">engineering</span>,{" "}
               <span className="text-text">product</span>, and{" "}
               <span className="text-text">leadership</span>.
@@ -170,11 +170,11 @@ export default function Hero() {
             <TerminalText
               lines={[
                 { text: "whoami", isCommand: true },
-                { text: "Engineering Manager @ Kargo" },
+                { text: "Engineering Manager @ Kargo | Activation Infrastructure" },
                 { text: "cat skills.txt", isCommand: true },
                 { text: "Ad Tech | Agentic AI | Full-Stack" },
                 { text: "ls initiatives/", isCommand: true },
-                { text: "ad-manager-mcp  multi-surface-arch  deployment-transform" },
+                { text: "platform-modernization  ad-manager-mcp  multi-surface-arch" },
                 { text: "echo $PHILOSOPHY", isCommand: true },
                 { text: "Build teams. Ship products. Lead with code." },
               ]}

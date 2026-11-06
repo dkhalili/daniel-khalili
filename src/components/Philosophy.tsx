@@ -11,28 +11,28 @@ const principles = [
     number: "01",
     title: "People First",
     description:
-      "Great products come from great teams. I invest in engineers through 1:1s, career conversations, and creating space for growth. When people thrive, the code follows.",
+      "I coach engineers through career transitions and larger responsibilities, from a QA teammate moving into software engineering to engineers taking ownership of releases, architecture, and product delivery.",
   },
   {
     icon: Code,
     number: "02",
     title: "Stay Technical",
     description:
-      "I don't manage from a distance. I review code, debate architecture, and build alongside my team. Credibility comes from staying close to the systems.",
+      "I write production code, review implementations, and guide architecture alongside my team. Staying close to the systems helps me make informed technical and delivery decisions.",
   },
   {
     icon: TrendingUp,
     number: "03",
     title: "Think in Outcomes",
     description:
-      "Every sprint, every feature, every refactor connects to a business result. I bridge product requirements and engineering execution to ensure what we ship actually matters.",
+      "I work with business and Product partners to understand needs, identify opportunities, and choose priorities. Delivery planning connects those priorities to team capacity, dependencies, and measurable results.",
   },
   {
     icon: Cpu,
     number: "04",
     title: "Embrace AI",
     description:
-      "AI isn't a buzzword in my workflow — it's a force multiplier. From agentic systems to AI-powered code reviews, I'm exploring what it means to manage both people and agents.",
+      "I build AI-assisted workflows with approval controls, targeting validation, and auditable changes. I help teams adopt AI tools with clear review standards and accountability for what reaches production.",
   },
 ];
 

@@ -33,20 +33,20 @@ export const metadata: Metadata = {
     template: "%s | Daniel Khalili",
   },
   description:
-    "Product-minded engineering manager with a strong technical foundation. Building high-performance teams and shipping impactful products at the intersection of engineering, product, and leadership.",
+    "Hands-on Engineering Manager with 10+ years in software, leading 10+ engineers across three pods. Shared advertising platforms, legacy modernization, and governed AI workflows.",
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Daniel Khalili",
     title: "Daniel Khalili — Engineering Manager",
     description:
-      "Building high-performance teams at the intersection of engineering, product, and leadership.",
+      "Hands-on engineering leadership, shared advertising platforms, and developing engineers into technical leaders.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Daniel Khalili — Engineering Manager",
     description:
-      "Building high-performance teams at the intersection of engineering, product, and leadership.",
+      "Hands-on engineering leadership, shared advertising platforms, and developing engineers into technical leaders.",
   },
   robots: { index: true, follow: true },
 };

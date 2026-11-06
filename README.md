@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daniel Khalili
+
+Personal portfolio and resume website for Daniel Khalili, Engineering Manager. Built with Next.js, React, TypeScript, Tailwind CSS, and Framer Motion.
+
+[Visit the website](https://danielkhalili.com)
 
 ## Getting Started
 
@@ -16,7 +20,9 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Portfolio content lives in `src/data/`, with page sections in `src/components/`. The editable resume and PDF build instructions are in `resume/`. The published download is `public/DanielKhalili_Resume.pdf`.
+
+Run `npm run build` to validate a production build. The contact form uses `RESEND_API_KEY` and an optional `ADMIN_EMAIL` environment variable. Configure these in your hosting environment; never commit credentials.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

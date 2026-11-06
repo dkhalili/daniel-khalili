@@ -8,51 +8,80 @@ export interface Initiative {
 
 export const initiatives: Initiative[] = [
   {
-    title: "Ad Manager MCP",
-    description:
-      "Co-founded the Ad Manager MCP at Kargo, integrating core ad operations workflows into MCP-compatible infrastructure. Extended the system into developer workflows for code-context-aware testing, analysis, monitoring, and fix generation across real ad operations workflows.",
-    tags: ["MCP", "Cursor", "Ad Tech"],
-    icon: "bot",
-    impact: "First MCP integration in ad tech",
+    "title": "Platform Modernization",
+    "description": "Leading the migration of a 12-year-old platform to Ad Manager, consolidating duplicated business logic into a modern Laravel/PHP foundation and shared APIs used across product teams.",
+    "tags": [
+      "Laravel",
+      "Platform",
+      "APIs"
+    ],
+    "icon": "wrench",
+    "impact": "Shared platform migration"
   },
   {
-    title: "Multi-Surface Ad Architecture",
-    description:
-      "Led and presented the architectural framework to expand Kargo's ad format hierarchy beyond OpenWeb to support CTV, In-App, DOOH, and OS Native surfaces. Started internally, adopted by a dedicated surfaces team, now a high-priority executive initiative.",
-    tags: ["Architecture", "CTV", "DOOH", "In-App"],
-    icon: "layers",
-    impact: "Adopted as executive priority",
+    "title": "Ad Manager MCP & AI",
+    "description": "Co-created and built an AI-assisted ad operations platform using Model Context Protocol (MCP), with approval controls, targeting validation, and auditable campaign and deal changes. Led AI workflow adoption across engineering and other departments.",
+    "tags": [
+      "MCP",
+      "AI",
+      "Ad Operations"
+    ],
+    "icon": "bot",
+    "impact": "Governed AI workflows"
   },
   {
-    title: "Deployment Transformation",
-    description:
-      "As Tech Lead, drove the shift from large bi-weekly deployments with recurring incidents to weekly releases with minimal failure rates across a broader team of roughly 10 engineers. Improved speed without sacrificing stability.",
-    tags: ["DevOps", "CI/CD", "Reliability"],
-    icon: "rocket",
-    impact: "Minimal failure rate",
+    "title": "Multi-Surface Ad Architecture",
+    "description": "Led a unified surface and format model across four applications, supporting connected TV (CTV), in-app, digital out-of-home, and OS-native advertising. Established consistent surface attribution across 35K+ live ad slots.",
+    "tags": [
+      "Architecture",
+      "CTV",
+      "In-App"
+    ],
+    "icon": "layers",
+    "impact": "35K+ live ad slots"
   },
   {
-    title: "Jira & GitHub Automation",
-    description:
-      "Built a webhook-driven workflow layer connecting GitHub, Jira, release metadata, PR labels, alerts, and engineering comms. The system synchronized tickets to PRs, generated release notes, surfaced workflow state, and helped engineers move from code context to operational action without leaving the development loop.",
-    tags: ["Webhooks", "GitHub", "DX"],
-    icon: "zap",
-    impact: "AI-driven automation",
+    "title": "Observability & Reliability",
+    "description": "Centralized metrics and incident alerting using VictoriaMetrics, Grafana, and PagerDuty; added Nightwatch request monitoring and strengthened cache recovery and backlog processing.",
+    "tags": [
+      "Grafana",
+      "Nightwatch",
+      "PagerDuty"
+    ],
+    "icon": "activity",
+    "impact": "Monitoring & recovery"
   },
   {
-    title: "Bidding Strategy & Curation",
-    description:
-      "Led the integration of bidding strategy and curation capabilities into the platform and coordinated rollout across the company.",
-    tags: ["Ad Tech", "Product", "Strategy"],
-    icon: "target",
-    impact: "Company-wide rollout",
+    "title": "Deployment Transformation",
+    "description": "Moved the team from large biweekly deployments with recurring incidents to weekly releases with improved stability.",
+    "tags": [
+      "CI/CD",
+      "Releases",
+      "Reliability"
+    ],
+    "icon": "rocket",
+    "impact": "Biweekly to weekly releases"
   },
   {
-    title: "AI Adoption & Agentic Systems",
-    description:
-      "Led AI integration within the engineering team and expanded tooling and workflows to other departments. Built internal agentic systems using Cursor, OpenAI API, Anthropic API, Neuron AI, and Laravel AI Toolkit to improve developer velocity, automate engineering operations, and support production workflows.",
-    tags: ["Agentic AI", "Cursor", "OpenAI"],
-    icon: "brain",
-    impact: "Cross-department adoption",
+    "title": "CTV Integrations",
+    "description": "Served as a CTV subject matter expert across engineering, ad operations, and supply teams. Delivered CTV inventory targeting across campaign tools and downstream ad delivery.",
+    "tags": [
+      "CTV",
+      "Targeting",
+      "Integrations"
+    ],
+    "icon": "tv",
+    "impact": "Campaign tools to ad delivery"
   },
+  {
+    "title": "Business KPI Visibility",
+    "description": "Built a platform health dashboard connecting engineering operations to revenue, inventory onboarding, and deal delivery.",
+    "tags": [
+      "Metrics",
+      "Revenue",
+      "Product"
+    ],
+    "icon": "chart",
+    "impact": "Business outcome visibility"
+  }
 ];

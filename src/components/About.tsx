@@ -12,19 +12,19 @@ const pillars = [
     icon: Code,
     title: "Engineering",
     description:
-      "Hands-on technically. I write code, review architecture, and stay close to the systems I lead. AI is a core part of how I work — building with agentic frameworks to drive results at a different scale.",
+      "I write production code, guide architecture, and review implementations. My team builds shared advertising infrastructure and modernizes legacy systems into APIs and services other product teams use.",
   },
   {
     icon: Lightbulb,
-    title: "Product",
+    title: "Product & Business",
     description:
-      "I think in outcomes, not outputs. Every engineering decision connects to a business result. I gather requirements, scope initiatives, and ensure what we build actually moves the needle.",
+      "I work directly with Product and business stakeholders to understand feedback, identify revenue opportunities, and set roadmap priorities. I partner with Project Management on capacity, dependencies, and delivery commitments.",
   },
   {
     icon: Users,
     title: "Leadership",
     description:
-      "I care about the people I work with and their growth. Through 1:1s, career development, and structured feedback, I help engineers advance while delivering on ambitious goals.",
+      "I lead 10+ engineers across three Activation Infrastructure pods. I develop engineers into technical leaders through coaching, career planning, and delegated ownership, helping them take on architecture, releases, and direct Product collaboration.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function About() {
           eyebrow="About Me"
           title="The"
           highlight="Trifecta"
-          description="I sit at the intersection of engineering, product, and leadership. That combination lets me work effectively across every layer of a technology organization."
+          description="I combine hands-on engineering, product and business partnership, and people leadership to build shared platforms and develop strong teams."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-20">
