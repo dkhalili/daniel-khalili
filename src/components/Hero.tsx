@@ -50,7 +50,7 @@ export default function Hero() {
       ref={ref}
       id="hero"
       onMouseMove={onMouseMove}
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-svh flex items-center overflow-hidden"
     >
       <ParticleField />
 

@@ -13,7 +13,14 @@ export default function Preloader() {
 
   useEffect(() => {
     const skip = reduced || !!sessionStorage.getItem(SESSION_KEY);
-    if (!skip) document.documentElement.style.overflow = "hidden";
+    const root = document.documentElement;
+    if (!skip) root.style.overflow = "hidden";
+    // Failsafe: never leave the page scroll-locked, even if the animation
+    // frame loop is throttled (background tab, low-power mode on phones).
+    const failsafe = setTimeout(() => {
+      root.style.overflow = "";
+      setDone(true);
+    }, 4000);
 
     const duration = 1500;
     const start = performance.now();
@@ -36,7 +43,11 @@ export default function Preloader() {
     }
     frame = requestAnimationFrame(tick);
 
-    return () => cancelAnimationFrame(frame);
+    return () => {
+      cancelAnimationFrame(frame);
+      clearTimeout(failsafe);
+      root.style.overflow = "";
+    };
   }, [reduced]);
 
   useEffect(() => {
